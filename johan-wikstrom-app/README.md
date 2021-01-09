@@ -1,3 +1,5 @@
+###### My Website ######
+WebApp by junior web dev. Built with NodeJS and React
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
