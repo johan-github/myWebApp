@@ -1,34 +1,30 @@
-html,body {
-  display: flex;
+/****** HTM / BODY ******/
+
+/* html,body {
   margin: 0;
-  height: 100%;
   background-color: rgb(255, 153, 0);
 }
 
-body {
-  background-color: cyan;
-}
+body{
+  background-color: rgb(127, 127, 221);
+} */
 
-.App {
+/****** APP ******/
+
+.App-container {
   display: flex;
+  flex-direction: row;
+
+  height: 55em;
   background-size: cover;
   background-color: rgb(59, 1, 87);
-  height: 100%;
-  width: 1680px; /*** This was the only solution atm, fix later ***/
-}
-
-.Sidenav{
-  background-color: rgb(0, 84, 117);
-  -webkit-flex: 1;
-  flex: 1;
-  min-width: 200px;
+  /*** width: 1680px;  This is the only solution atm, fix later ***/
 }
 
 .p-inside-App{
-  background-color: rgb(1, 255, 56);
-  color: rgb(163, 187, 26);
-  -webkit-flex: 5;
-  flex: 5;
-  margin-top: auto;
-  margin-bottom: auto;
+  background-color: rgb(18, 233, 64);
+  color: rgb(0, 68, 255);
+  text-align: center;
+  height: 100px;
+  width: 300px;
 }
