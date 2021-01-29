@@ -1,4 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Add '*' before to select all. E.g: *.js
 
 # dependencies
 /node_modules
@@ -6,7 +7,8 @@
 .pnp.js
 
 # files
-.json
+*.json
+data.js
 
 # testing
 /coverage
@@ -15,6 +17,7 @@
 /build
 
 # misc
+../.DS_Store
 .DS_Store
 .env.local
 .env.development.local

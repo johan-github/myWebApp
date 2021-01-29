@@ -21,10 +21,13 @@ body{
   /*** width: 1680px;  This is the only solution atm, fix later ***/
 }
 
-.p-inside-App{
+.App-p-tag{
   background-color: rgb(18, 233, 64);
   color: rgb(0, 68, 255);
   text-align: center;
-  height: 100px;
-  width: 300px;
+  width: 500px;
+}
+
+.App-main-content{
+  background-color: aqua;
 }
