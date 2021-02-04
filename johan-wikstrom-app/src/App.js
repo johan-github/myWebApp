@@ -3,7 +3,6 @@ import '../src/styles/Sidenav.css'
 import '../src/styles/Footer.css'
 import '../src/styles/Introduction.css'
 import { useState, Component } from 'react'
-import { Route, Switch } from 'react-router-dom'
 
 import Sidenav from './components/Sidenav'
 import Footer from './components/Footer'
@@ -22,10 +21,10 @@ function App() {
     <div className="App-container">
 
       <Sidenav/>
-      
+
       <Switch>
         <Route path="/" component={Introduction} exact/>
-        <Route path="/about" component={About}/>
+        <Route path="/about" component={About}/> 
         <Route path="/portfolio" component={Portfolio}/>
         <Route path="/skills" component={Skills}/>
         <Route component={Error} />
