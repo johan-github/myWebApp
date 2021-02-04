@@ -2,25 +2,25 @@ import './App.css';
 import '../src/styles/Sidenav.css'
 import '../src/styles/Footer.css'
 import '../src/styles/Introduction.css'
+import { useState } from 'react'
 
 import Sidenav from './components/Sidenav'
 import Footer from './components/Footer'
 import Introduction from './components/Introduction'
-
-
-// Content from JSON-file
+import About from './components/About'
+import Portfolio from './components/Portfolio'
+import Skills from "./components/Skills";
 
 function App() {
+
+  const [currentPage, setCurrentPage] = useState('About');
+  const page = currentPage === 'Introduction' ? <Introduction /> : <About/>;
+  console.log("Current page:: " + currentPage);
   return (
     <div className="App-container">
 
-      <Sidenav />
-      <div className="App-div-tag-for-p">
-        <p className="App-p-tag">
-          P-TAG INSIDE APP
-                    </p>
-        <Introduction/>
-      </div>
+      <Sidenav setCurrentPage={setCurrentPage} />
+      {page}
       <Footer />
 
     </div> // KEEP AT BOTTOM AT ALL TIMES

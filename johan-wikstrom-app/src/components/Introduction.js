@@ -1,9 +1,9 @@
-function Introduction(){
+function Introduction(props){
     return(
         <div className="Introduction-container">
-            <p className="Introduction-content">
-                Hello!<br/>My name is Johan.
-            </p>
+            <p>
+                {props.intro}
+            </p>            
         </div>
     )
 }

@@ -1,5 +1,4 @@
 import profilePicture from '../img/jw.jpeg'
-import { useState } from 'react'
 import { personalinfo, routes, links } from '../data.json'
 import DataManager from './DataManager'
 // import Introduction from './Introduction'
@@ -17,13 +16,13 @@ function PrintPicture() {
 }
 
 
-function Sidenav() {
+function Sidenav(props) {
   return (
     <div className="Sidenav-container">
       <PrintPicture />
       <DataManager data={personalinfo} type="personalinfo" />
-      <DataManager data={routes} type="routes" />
-      <DataManager data={links} type="links" onMouseEnter='{mouseHoverEffect()}' />
+      <DataManager data={routes} type="routes" setCurrentPage={props.setCurrentPage} />
+      <DataManager data={links} type="links" />
     </div>
   )
 }

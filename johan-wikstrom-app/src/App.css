@@ -31,3 +31,8 @@ body{
 .App-main-content{
   background-color: aqua;
 }
+
+.Intro{
+  background-color: rgb(136, 10, 10);
+  color: lightskyblue;
+}

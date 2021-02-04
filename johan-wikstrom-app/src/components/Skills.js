@@ -1,11 +1,11 @@
-function About(){
+function Skills(){
     return(
         <div className="Introduction-container">
             <p className="Introduction-content">
-                About!<br/>This is about me.
+                Skills and Experience!<br/>Presenting all skills and experience.
             </p>
         </div>
     )
 }
 
-export default About
+export default Skills
