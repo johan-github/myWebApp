@@ -1,0 +1,25 @@
+.Dialog-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  max-width: 150vh;
+  max-height: 60vh;
+  min-height: 60vh;
+  min-width: 150vh;
+
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.2)
+  );
+  margin-left: 10vh;
+  margin-top: 2vh;
+  border-radius: 1rem;
+
+  /* ------ TEXT STYLING ------ */
+  text-align: center;
+  color: rgb(206, 43, 22);
+  font-family: monospace;
+  font-size: 20px;
+}

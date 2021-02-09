@@ -1,9 +1,10 @@
+import DataManager from "./DataManager";
+import data from '../data.json';
+
 function Portfolio(){
     return(
-        <div className="Introduction-container">
-            <p className="Introduction-content">
-                Portfolio!<br/>Presenting portfolio.
-            </p>
+        <div className="Dialog-container">
+            <DataManager className="Dialog-text" data={data.portfolio} />
         </div>
     )
 }

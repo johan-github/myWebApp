@@ -1,9 +1,12 @@
-function Introduction(props){
+import DataManager from './DataManager'
+import data from '../data.json'
+
+
+function Introduction(){
+
     return(
-        <div className="Introduction-container">
-            <p>
-                {props.intro}
-            </p>            
+        <div className="Dialog-container">
+            <DataManager className="Dialog-text" data={data.introduction}></DataManager>
         </div>
     )
 }

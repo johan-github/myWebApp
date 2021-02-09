@@ -1,10 +1,11 @@
+import DataManager from "./DataManager";
+import data from '../data.json';
+
 function About(){
     console.log("ABOUT");
     return(
-        <div className="Introduction-container">
-            <p className="Introduction-content">
-                About!<br/>This is about me.
-            </p>
+        <div className="Dialog-container">
+            <DataManager className="Dialog-text" data={data.about}/>
         </div>
     )
 }

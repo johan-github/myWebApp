@@ -1,11 +1,10 @@
-import profilePicture from '../img/jw.jpeg'
+import profilePicture from '../img/profile-pic.jpg'
 import { personalinfo, routes, links } from '../data.json'
-import DataManager from './DataManager'
-// import Introduction from './Introduction'
+import { Link } from 'react-router-dom'
 
 function PrintPicture() {
   return (
-    <div className="Sidenav-top-picture">
+    <div className="Sidenav-top-picture-div">
       <img
         src={profilePicture}
         alt="profile-pic"
@@ -16,13 +15,16 @@ function PrintPicture() {
 }
 
 
-function Sidenav(props) {
+function Sidenav() { // (props)
   return (
     <div className="Sidenav-container">
       <PrintPicture />
-      <DataManager data={personalinfo} type="personalinfo" />
-      <DataManager data={routes} type="routes" setCurrentPage={props.setCurrentPage} />
-      <DataManager data={links} type="links" />
+      
+      <Link className="Sidenav-general-href-styling" to="/">Introduction</Link><br/>
+      <Link className="Sidenav-general-href-styling" to="/about">About</Link><br/>
+      <Link className="Sidenav-general-href-styling" to="/portfolio">Portfolio</Link><br/>
+      <Link className="Sidenav-general-href-styling" to="/skills">Skills and Experience</Link>
+      
     </div>
   )
 }
@@ -30,6 +32,14 @@ function Sidenav(props) {
 export default Sidenav
 
 // Comments
+
+// Before React Router
+/*    <DataManager data={personalinfo} type="personalinfo" />
+      <DataManager data={routes} type="routes" setCurrentPage={props.setCurrentPage} />
+      <DataManager data={links} type="links" /> */
+
+
+
 
 // <input value={value} onChange={(e) => setValue(e.target.value)}/>
 // const [value, setValue] = useState('')

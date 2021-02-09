@@ -1,9 +1,10 @@
+import DataManager from "./DataManager";
+import data from '../data.json';
+
 function Skills(){
     return(
-        <div className="Introduction-container">
-            <p className="Introduction-content">
-                Skills and Experience!<br/>Presenting all skills and experience.
-            </p>
+        <div className="Dialog-container">
+            <DataManager className="Dialog-text" data={data.skills}/>
         </div>
     )
 }

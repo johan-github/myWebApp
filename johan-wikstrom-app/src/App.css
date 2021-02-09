@@ -15,9 +15,9 @@ body{
   display: flex;
   flex-direction: row;
 
-  height: 55em;
+  min-height: 100vh;
   background-size: cover;
-  background-color: rgb(59, 1, 87);
+  background-color: rgba(78, 126, 180, 0.63); /****  TURQUOSE : #65dfc9, #59c0cf ****/
   /*** width: 1680px;  This is the only solution atm, fix later ***/
 }
 
@@ -35,4 +35,8 @@ body{
 .Intro{
   background-color: rgb(136, 10, 10);
   color: lightskyblue;
+}
+
+.App-switch{
+
 }
